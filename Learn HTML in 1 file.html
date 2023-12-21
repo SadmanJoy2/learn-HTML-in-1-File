@@ -1,0 +1,383 @@
+<!-- 
+
+   What is HTML ?
+  ----------------
+HTML stands for HyperText Markup Language. 
+It is the standard markup language used to create and design the structure of web pages and web applications.
+HTML uses a system of elements or tags to define the various parts of 
+a document, such as headings, paragraphs, links, images, forms, and more. 
+These elements are marked by opening and closing tags, and they form the building blocks of a webpage.
+
+1989	Tim Berners-Lee invented www
+1991	Tim Berners-Lee invented HTML
+
+-->
+
+<!-- 
+   Advantage of HTML
+  -------------------
+
+HTML offers several advantages that contribute to its widespread use in web development:
+
+ Ease of Learning and Use:
+HTML is relatively simple to learn and use, making it accessible for beginners. Its syntax is straightforward, and it doesn't require complex programming skills.
+
+ Platform Independence:
+HTML is platform-independent, meaning it can be viewed on any device with a web browser. This universality contributes to the widespread compatibility of web content.
+
+ Standardization:
+HTML is an open standard maintained by the World Wide Web Consortium (W3C). This standardization ensures consistency and compatibility across different browsers and platforms.
+
+ Compatibility with Other Technologies:
+HTML can be easily integrated with other web technologies, such as CSS (Cascading Style Sheets) for styling and layout, and JavaScript for interactivity. This trio of HTML, CSS, and JavaScript forms the foundation of modern web development.
+
+ SEO-Friendly:
+Search engines can easily index and understand HTML content. Properly structured HTML, with meaningful tags and attributes, can positively impact a webpage's search engine ranking.
+
+ Scalability:
+HTML is scalable for both small and large projects. It provides flexibility for creating simple static web pages or complex dynamic web applications.
+
+ Accessibility:
+HTML supports accessibility features, allowing developers to create content that is inclusive and accessible to users with disabilities. Proper semantic HTML helps assistive technologies interpret and present content to users.
+
+ Responsive Design:
+HTML plays a crucial role in creating responsive web designs. By combining HTML with CSS media queries, developers can ensure that web pages adapt to various screen sizes and devices.
+
+ File extension:
+You can easily make a text file and run on any device with a browser  
+
+In summary, HTML is a fundamental technology for web development, providing a structured way to create content that is universally accessible and easily understood by both browsers and developers.
+  
+-->
+
+
+
+<!-- 
+
+   Can all devices view/supports HTML?
+  -------------------------------------
+
+HTML is fully cross platform, most elements will work in all browsers, 
+but they may not be displayed exactly the same. And remember that if our CSS doesn't load, 
+HTML is still fully functional, readable, and understandable. 
+handheld friendly & mobile optimized are for older devices. 
+
+ -->
+
+
+
+<!-- This is comment -->
+
+<!-- The HTML element is everything from the start tag to the end tag: -->
+
+<!-- Now start the live server and understand all the tags -->
+
+
+<!-- Basic structure of HTML start : 🔽 -->
+
+<!DOCTYPE html> <!-- Document Type HTML -->
+<html lang="en"> <!-- Initial language -->
+<head>
+    <meta charset="UTF-8"> <!-- Charachter/Language support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Initial width of browser -->
+    <title>Document</title> <!-- This is browser tab title -->
+</head>
+<body>
+<!-- Body contents starts from here : -->
+
+<h1>This is h1 : HTML biggest heading text</h1>
+<!-- Then h2-h6 are smaller -->
+
+
+<hr> <!-- This empty tag add a horizontal line -->
+
+<br> <!-- This empty tag add a break -->
+
+
+<p>This tag is used for write paragraph</p>
+
+<hr>
+
+<pre>
+  This is pre tag which perform exact writing alignment
+</pre>
+
+<hr>
+
+
+<!-- Text formatting -->
+
+<b>I am bold text</b> 
+<br> <br> 
+
+<i>I am italic text</i>
+<br><br>
+
+I am <em> Italic </em>  <!--this tag is used for tipycal display of italic-->
+<br> <br>
+
+<mark> I am marked </mark>      
+<br><br>
+
+<small> I am small </small>  
+<br><br>
+
+ H <sub>2</sub> O   <!--This tag is for writing sub text--> 
+<br><br>
+
+ (a+b) <sup>2</sup> <!--This tag is for writing super text-->
+<hr>
+
+<!-- <Div></div> = This tag defines a division or a section-->
+
+<div contenteditable="true">This is editable</div>
+<hr>
+
+<img src="nature.png" class="photo" alt="..."> <!--This tag is for adding image-->
+<hr>
+
+<!-- File Path -->
+<img src="picture.jpg"> <!-- The "picture.jpg" file is located in the same folder as the current page -->
+<img src="images/picture.jpg"> <!-- The "picture.jpg" file is located in the images folder in the current folder-->	
+<img src="/images/picture.jpg">	<!-- The "picture.jpg" file is located in the images folder at the root of the current web-->
+<img src="../picture.jpg">	<!-- The "picture.jpg" file is located in the folder one level up from the current folder-->
+
+<hr>
+
+<li>	Defines a list item </li>  <!--this tag defines a list item--> 
+<hr>
+
+
+<!-- <link> = 	Defines the relationship between a document and an external resource (most used to link to style sheets)-->
+
+<!-- <map> = this tag is used to define an image map and click base area-->
+
+
+<ul>	<!--this tag is used for Defines an unordered list-->
+<li> coffee </li>  <!--this li tsg is for listing-->
+<li> tea </li>
+<li> milk </li>
+</ul>   
+
+<br> 
+<hr>
+
+<ol> <!--This tag used for listing with number-->
+  <li>Javascript</li>
+  <li>python</li>
+  <li>MPHP</li>
+</ol>
+
+
+<ol start="10"><!--You can also use this listing tag comanding which number you want to start-->
+  <li>Javascript</li>
+  <li>python</li>
+  <li>MPHP</li>
+</ol>
+
+<ol reversed> <!--this will reverse the list-->
+  <li>HTML</li>
+  <li>CSS</li>
+
+</ol>
+
+<br>
+<hr>
+
+<a href="">This is a link tag</a>
+<hr>
+
+<nav>	<!--this tag is used for Defines navigation links-->
+  <a href="html"> HTML <!--this white words will show on the screen--></a> <!--tag a used for adding links-->
+  <a href="css">  CSS  </a>
+  <a href="js">   Javascript </a>
+  <a href="python">Python </a>
+</nav>     
+
+<br> 
+<hr>
+
+
+<input name="asdf" id="asdf" placeholder="search"> <!--the input tag is used for take the input-->
+<br><br>
+<input type="file" accept=".png" /> <!--this only accepts specific file type-->
+<br><br> 
+<hr>
+
+  <!--All input types-->
+<input type="button"> <br><br>
+<input type="checkbox"> <br><br>
+<input type="color"> <br><br>
+<input type="date"> <br><br>
+<input type="datetime-local"> <br><br>
+<input type="email"> <br><br>
+<input type="file"> <br><br>
+<input type="hidden"> <br><br>
+<input type="image"> <br><br>
+<input type="month"> <br><br>
+<input type="number"> <br><br>
+<input type="password"> <br><br>
+<input type="radio"> <br><br>
+<input type="range"> <br><br>
+<input type="search"> <br><br>
+<input type="submit"> <br><br>
+<input type="tel"> <br><br>
+<input type="time"> <br><br>
+<input type="url"> <br><br>
+<input type="week"> <br><br>
+  
+<hr>
+
+<button>Button</button>  <!--this tag is used for create button-->
+  
+<br> 
+<hr>
+
+
+<section>	<!--this tag Defines a section in a document -->
+  <h2>
+    The History Of Bangladesh
+  </h2>
+  <p>
+    With the partition of India in 1947, it became the Pakistani province of East Bengal (later renamed East Pakistan), one of five provinces of Pakistan, separated from the other four by 1,100 miles (1,800 km) of Indian territory. In 1971 it became the independent country of Bangladesh, with its capital at Dhaka.
+  </p>
+</section>  
+
+<br> 
+<hr>
+
+
+<select name="cars" id="cars"> <!--this tag Defines a drop-down list-->
+  <option value="farari">Farari</option>	<!--this tag is for the selection of things-->
+  <option value="lambo">Lambo</option>
+  <option value="audi">Audi</option>
+  <option value="bmw">BMW</option> 
+</select>
+
+<hr>
+
+
+<form action=""><!--The form tag is used to create an HTML form for user input-->
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label> 
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit"><!--The input tag specifies an input field where the user can enter data-->
+</form>
+
+<br><br>
+<hr>
+
+
+<details>
+    <summary> <!-- this tag Defines a visible heading for a details element-->
+        About Dhaka
+    </summary>
+    <p>Dhaka formerly known as Dacca, is the capital and largest city of Bangladesh. It is the ninth-largest and seventh-most densely populated city in the world.</p>
+</details>
+
+<br> 
+<hr>
+
+
+<marquee> I am breaking news </marquee><!--You can also specify various attributes to control the scrolling behavior, such as the direction, speed, and delay-->
+<br><br>
+<hr>
+
+
+<!-- this is html table -->
+  <table border="1"> <!--this table tag is used for creating table border-->
+  <tr> <!--this tag is used for table row-->
+    <th>Company</th>  <!--this tag is used for table head-->
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td> <!--this tag is used for table data-->
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  
+</table> 
+<hr>
+<br><br>
+
+<p>This is audio with controls 🔽</p>
+<audio controls src="media/example.mp3">This is audio</audio>
+<hr>
+
+<p>This is video with controls 🔽</p>
+<video controls src="media/example.mp4"></video>
+<hr>
+
+<p>This is for showing other websites or content 🔽</p>
+<iframe src="https://www.w3schools.com/html/" frameborder="1">W3 school</iframe>
+<hr>
+
+<a href="" download="">This is a link tag with download attribute</a>
+
+<!-- Thats all are the important tags of HTML-->
+
+
+
+
+<!-- 
+  Important HTML attributes :
+  --------------------------- 
+
+   HTML attributes provide additional information about HTML elements.
+
+class
+Purpose: Assigns one or more class names to an element for styling with CSS or selecting with JavaScript.
+Example: <img src="nature.png" class="photo" alt="my photo">
+
+id
+Purpose: Provides a unique identifier for an element, used for styling and targeted selection with JavaScript.
+
+src
+Purpose: Specifies the source URL for external resources like images, scripts, or iframes.
+
+alt
+Purpose: Defines alternative text for images, displayed if the image cannot be loaded. Important for accessibility.
+
+href
+Purpose: Defines the URL of a hyperlink, used with anchor (<a>) tags to create clickable links.
+
+style
+Purpose: Specifies inline CSS styles for an element, allowing for unique styling.
+
+width and height
+Purpose: Sets the width and height of elements like images or tables.
+
+target
+Purpose: Specifies where to open a linked document, e.g., in a new tab or window.
+
+disabled
+Purpose: Disables user interaction for an input, button, or select element.
+
+placeholder
+Purpose: Provides a hint or example text for the expected value of an input field.
+
+required
+Purpose: Specifies that an input field must be filled out before form submission.
+
+aria-*
+Purpose: Enhances accessibility by providing additional information to assistive technologies.
+
+role
+Purpose: Defines the role of an element in the document structure for accessibility.
+
+data-*
+Purpose: Allows the embedding of custom data attributes on elements, accessed by JavaScript.
+
+colspan and rowspan
+Purpose: Defines the number of columns or rows a table cell should span.
+
+  -->
+
+ 
+<!-- Body end here : -->
+</body>
+</html>
+
+<!-- Basic structure of HTML end 🔼 : -->
